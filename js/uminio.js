@@ -86,7 +86,21 @@
 	}(jQuery);
 
 "use strict";
-
+var textSlider = tns({
+	"controls": true,
+	"nav": false, 
+	"autoplay": false,
+	"autoplayHoverPause": false,
+	"autoplayTimeout": 3500,
+	"loop": false,
+	"items": 1,
+	"gutter": 10,
+	"container": ".text_slider",
+	"swipeAngle": false,
+	"autoplay": true,
+	"speed": 400,
+	"mouseDrag": true
+});
 var otherPagesSlider = tns({
 	"controls": false,
 	"navPosition": "bottom",
@@ -204,91 +218,91 @@ var shopPagesSlider = tns({
 	"speed": 400,
 	"mouseDrag": true
 });
-var languageSlider = tns({
-	"controls": false,
-	"navPosition": "bottom",
-	"autoplay": false,
-	"autoplayHoverPause": false,
-	"autoplayTimeout": 3500,
-	"loop": false,
-	"items": 2,
-	"responsive": {
-		"430": {
-			"items": 2.5,
-			"gutter": 10
-		},
-		"576": {
-			"items": 3,
-			"gutter": 10
-		},
-		"768": {
-			"items": 4,
-			"gutter": 10
-		},
-		"900": {
-			"items": 5,
-			"gutter": 10
-		},
-		"1024": {
-			"items": 6,
-			"gutter": 20
-		},
-		"1200": {
-			"items": 7,
-			"gutter": 30
-		},
-		"1900": {
-			"items": 8,
-			"gutter": 30
-		}
-	},
-	"gutter": 10,
-	"container": ".languages-grid",
-	"swipeAngle": false,
-	"autoplay": true,
-	"speed": 400,
-	"mouseDrag": true
-});
+// var languageSlider = tns({
+// 	"controls": false,
+// 	"navPosition": "bottom",
+// 	"autoplay": false,
+// 	"autoplayHoverPause": false,
+// 	"autoplayTimeout": 3500,
+// 	"loop": false,
+// 	"items": 2,
+// 	"responsive": {
+// 		"430": {
+// 			"items": 2.5,
+// 			"gutter": 10
+// 		},
+// 		"576": {
+// 			"items": 3,
+// 			"gutter": 10
+// 		},
+// 		"768": {
+// 			"items": 4,
+// 			"gutter": 10
+// 		},
+// 		"900": {
+// 			"items": 5,
+// 			"gutter": 10
+// 		},
+// 		"1024": {
+// 			"items": 6,
+// 			"gutter": 20
+// 		},
+// 		"1200": {
+// 			"items": 7,
+// 			"gutter": 30
+// 		},
+// 		"1900": {
+// 			"items": 8,
+// 			"gutter": 30
+// 		}
+// 	},
+// 	"gutter": 10,
+// 	"container": ".languages-grid",
+// 	"swipeAngle": false,
+// 	"autoplay": true,
+// 	"speed": 400,
+// 	"mouseDrag": true
+// });
 
-var showcaseWebsitesBuiltWithUmino = tns({
-	"controls": false,
-	"navPosition": "bottom",
-	"autoplay": true,
-	"autoplayHoverPause": false,
-	"autoplayTimeout": 3500,
-	"items": 1,
-	"edgePadding": 100,
-	"gutter": 10,
-	"responsive": {
-		"900": {
-			"items": 2,
-			"gutter": 20
-		},
-		"1024": {
-			"items": 2,
-			"gutter": 20,
-		},
-		"1200": {
-			"items": 2,
-			"gutter": 20,
-			"edgePadding": 200,
-		},
-		"1900": {
-			"items": 2,
-			"gutter": 30,
-			"edgePadding": 300,
-		},
-		"2000": {
-			"items": 2,
-			"gutter": 30,
-			"edgePadding": 500,
-		}
-	},
-	"container": ".showcase-websites-built-with-umino",
-	"swipeAngle": false,
-	"speed": 400,
-	"mouseDrag": true
-});
+// var showcaseWebsitesBuiltWithUmino = tns({
+// 	"controls": false,
+// 	"navPosition": "bottom",
+// 	"autoplay": true,
+// 	"autoplayHoverPause": false,
+// 	"autoplayTimeout": 3500,
+// 	"items": 1,
+// 	"edgePadding": 100,
+// 	"gutter": 10,
+// 	"responsive": {
+// 		"900": {
+// 			"items": 2,
+// 			"gutter": 20
+// 		},
+// 		"items": 2,
+// 			"gutter": 20,
+// 		},
+// 		"1200": {
+// 			"items": 2,
+// 			"gutter": 20,
+// 			"edgePadding": 200,
+// 		},
+// 		"1900": {
+// 			"1024": {
+// 			"items": 2,
+// 			"gutter": 30,
+// 			"edgePadding": 300,
+// 		},
+// 		"2000": {
+// 			"items": 2,
+// 			"gutter": 30,
+// 			"edgePadding": 500,
+// 		}
+// 	},
+// 	"container": ".showcase-websites-built-with-umino",
+// 	"swipeAngle": false,
+// 	"speed": 400,
+// 	"mouseDrag": true
+// });
 
 AOS.init();
 
