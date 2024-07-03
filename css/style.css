@@ -2006,6 +2006,10 @@ mark {
   color: var(--color-main);
 }
 
+.px-80 {
+  padding-inline: 80px;
+}
+
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -3085,7 +3089,7 @@ body .site-footer {
 
 .site-footer .hot {
   display: inline-block;
-  border: 1px solid #2B253A;
+  border: 1px solid var(--Background, #FFF);
   border-radius: 30px;
   line-height: 18px;
   color: #fff;
@@ -3206,6 +3210,11 @@ body .site-footer {
 .section {
   position: relative;
   margin-bottom: var(--space-gobal, 100px);
+}
+
+.section-various-items {
+  /* position: relative; */
+  margin-bottom: calc(var(--space-gobal, 100px) - 30px);
 }
 
 .divider {
@@ -3878,13 +3887,13 @@ background-clip: text;
   margin: 30px 20px 0 0;
   background-color: var(--color-white);
   color: var(--color-main);
-  border-color: var(--color-white);
+  border: 1px solid var(--Background, #FFF);
 }
 
 .slider .button-wrapper .button:last-child {
   margin-right: 0;
   color: var(--color-white);
-  border-color: var(--color-white);
+  border: 1px solid var(--Background, #FFF);
   background-color: transparent;
 }
 
@@ -6387,7 +6396,7 @@ body .crisp-client .cc-tlyw[data-full-view="true"] .cc-kxkl .cc-nsge {
   margin-bottom: 0px;
 }
 #optimized{
-  padding-top: 100px;
+  padding-top: var(--space-gobal, 100px);
 }
 .image_Customizability {
    margin-top: 50px;
