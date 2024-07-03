@@ -39,8 +39,8 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --space-gobal: 100px;
-  --primary: #EA642D;
-  --primary-hover: #EA642D;
+  --primary: #ED2051;
+  --primary-hover: #ED2051;
   --border-radius: 30px;
   --color-main: #111111;
   --color-white: #ffffff;
@@ -1396,7 +1396,6 @@ input[type="submit"] {
   outline: none;
   text-decoration: none;
   color: var(--mg-button-text, #fff);
-  border: 1px solid var(--primary);
   background-color: var(--primary);
   border-radius: var(--border-radius);
   font-family: Plus Jakarta Sans, sans-serif;
@@ -3682,6 +3681,7 @@ background-clip: text;
 
 
 .slider::before {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -6395,7 +6395,7 @@ body .crisp-client .cc-tlyw[data-full-view="true"] .cc-kxkl .cc-nsge {
 }
 @media(min-width: 992px) {
   .image-block-1,.image-block-3 {
-      gap: 10px;
+      gap: 20px;
       display: flex;
       position: relative;
         z-index: 2;
@@ -6472,7 +6472,120 @@ padding: 60px;
   margin-left: auto;
   margin-right: auto;
 }
-cd{
-  margin-left: auto;
-  margin-right: auto;
+
+.w-full{
+    width: 100%;
+}
+.text_slider p {
+  text-transform: uppercase;
+}
+.animation-top-bottom-1 img {
+  -webkit-animation: 1.2s tm-loop-move-vertical linear infinite alternate;
+  animation: 1.2s tm-loop-move-vertical linear infinite alternate;
+  -webkit-animation-duration: var(--loop-speed, 8s);
+  animation-duration: var(--loop-speed, 0.8s);
+}
+.section-Customizability .animation-top-bottom-1 {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+.site-header .hot {
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    line-height: 18px;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+}
+.gradient-background__wrapper {
+    background: #0f0d17;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+}
+.gradient-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(250px);
+    filter: blur(250px);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.gradient-background__noise {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(background__noise.webp);
+    background-size: 100px;
+}
+.gradient-background__shape--1 {
+    bottom: 0;
+    left: 0;
+    width: clamp(450px, 50vw, 700px);
+    height: clamp(450px, 50vw, 700px);
+    background: #c834e0;
+    mix-blend-mode: lighten;
+    -webkit-transform: translate(-30%, 40%);
+    transform: translate(-30%, 40%);
+}
+.gradient-background__shape {
+    mix-blend-mode: lighten;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+    position: absolute;
+    border-radius: 100%;
+}
+.gradient-background__shape--2 {
+    bottom: 0;
+    right: 0;
+    width: clamp(350px, 40vw, 600px);
+    height: clamp(350px, 40vw, 600px);
+    background: #c834e0;
+    -webkit-transform: translate(20%, -40%);
+    transform: translate(20%, -40%);
+    -webkit-animation-name: gradientShapeAnimation2;
+    animation-name: gradientShapeAnimation2;
+}
+
+@keyframes gradientShapeAnimation2 {
+  0% {
+    -webkit-transform: translate(20%, -40%) rotate(-20deg);
+    transform: translate(20%, -40%) rotate(-20deg);
+}
+
+20% {
+    -webkit-transform: translate(0, 0) skew(-15deg, -15deg) rotate(80deg);
+    transform: translate(0, 0) skew(-15deg, -15deg) rotate(80deg);
+}
+40% {
+    -webkit-transform: translate(-40%, 50%) rotate(180deg);
+    transform: translate(-40%, 50%) rotate(180deg);
+}
+60% {
+    -webkit-transform: translate(-20%, -20%) skew(15deg, 15deg) rotate(80deg);
+    transform: translate(-20%, -20%) skew(15deg, 15deg) rotate(80deg);
+}
+80% {
+    -webkit-transform: translate(10%, -30%) rotate(180deg);
+    transform: translate(10%, -30%) rotate(180deg);
+}
+100% {
+    -webkit-transform: translate(20%, -40%) rotate(340deg);
+    transform: translate(20%, -40%) rotate(340deg);
+}
+}
+.section-Customizability .visitor-box__wrapper {
+   padding-bottom: 0px;
 }
